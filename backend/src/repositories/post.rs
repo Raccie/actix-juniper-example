@@ -222,9 +222,7 @@ impl PostBatcher {
 
 #[async_trait]
 impl BatchFn<Uuid, Vec<Post>> for PostBatcher {
-    //type Error = AppError;
-
-    async fn load(&self, keys: &[Uuid]) -> HashMap<Uuid, Vec<Post>> {
+    async fn load(&mut self, keys: &[Uuid]) -> HashMap<Uuid, Vec<Post>> {
 
         info!("Loading batch {:?}", keys);
 
