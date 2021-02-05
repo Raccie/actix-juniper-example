@@ -4,5 +4,5 @@ cargo build --release
 cd ..
 cd frontend || exit
 npm install
-npm run-script build
+npm run build
 
