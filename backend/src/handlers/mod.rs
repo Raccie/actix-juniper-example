@@ -13,9 +13,8 @@ pub fn app_config(config: &mut web::ServiceConfig) {
     config
         .data(schema)
         .service(web::resource("/graphql").route(web::post().to(graphql)))
-        .service(web::resource("/playground").route(web::get().to(playground)));
-        //.service(fs::Files::new("/", "../frontend/build/").index_file("index.html"));
-    // TODO FUCK
+        .service(web::resource("/playground").route(web::get().to(playground)))
+        .service(fs::Files::new("/", "../frontend/build/").index_file("index.html"));
 
 }
 

@@ -16,10 +16,10 @@ uuid = { version = "0.8.2", features = ["serde", "v4"] }
 chrono = { version = "0.4.19", features = ["serde"] }
 dotenv = "0.15.0"
 config = "0.10.1"
-tokio-pg-mapper = "0.2.0"
-tokio-pg-mapper-derive = "0.2.0"
-tokio-postgres = { version = "0.7.0", features = ["with-chrono-0_4", "with-uuid-0_8"] }
-deadpool-postgres = "0.7.0"
+tokio-pg-mapper = "0.1.5"
+tokio-pg-mapper-derive = "0.1.5"
+tokio-postgres = { version = "0.5.3", features = ["with-chrono-0_4", "with-uuid-0_8"] }
+deadpool-postgres = "0.5.5"
 slog = "2.7.0"
 slog-term = "2.6.0"
 slog-async = "2.6.0"
